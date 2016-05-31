@@ -1,0 +1,184 @@
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffffff;
+}
+
+body {
+    font: 14px Arial, sans-serif;
+    color: #666;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    margin: 30px auto auto auto;
+    background: #D4AF37;
+}
+
+header > div {
+    margin: 30px auto 30px auto;
+    width: 100%;
+}
+
+header > div div, a {
+    display: inline-block;
+}
+
+p {
+    margin: 0 0 15px 0;
+    line-height: 20px;
+}
+
+.custom-navbar-fixed-bottom {
+    z-index: 1030;
+}
+
+.vcard {
+    line-height: 18px;
+    margin-top: 18px;
+}
+
+.vcard .region, .vcard .postal-code {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px;
+}
+
+.vcard .email, .vcard .street-address, .vcard .locality, .vcard .country-name {
+    display: block;
+    margin-top: 5px;
+}
+
+@media (max-width: 979px) {
+    .container {
+        margin: auto auto auto auto;
+    }
+}
+
+#content {
+    padding-bottom: 20px;
+}
+
+#wrapper {
+    background: #fff;
+    -webkit-box-shadow:  0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+    box-shadow:  0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+}
+#logo {
+    font-weight: bold;
+    color: #663300;
+    font-size: 30px;
+    margin-left: 15px;
+    vertical-align: bottom;
+}
+
+#clubmark {
+    float: right;
+}
+
+#navbarCollapse .nav li a {
+    font-family: blissbold, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+#bolded-line {
+    text-indent: -9999px;
+    height: 3px;
+    width: 100px;
+    display: block;
+    background: #72b626;
+    margin-bottom: -2px;
+}
+
+.slide-caption h3,
+.page-summary p strong,
+.slide-caption a,
+h1, h2, h3, h4, h5, h6, .home h1 span,
+.promo_box .item-description h5 a > span, .widget p > a {
+    color: #663300;
+    font-weight: bolder;
+}
+
+#header .quotation, .page-summary p, .content a,
+.content a:visited, .file_info a, .file_info a:visited,
+.widget .promo_box_content p a, .widget .promo_box .promo_box_content p a:visited,
+form label, #contact_form label {
+    color: #11a9ee;
+}
+
+#navbarCollapse ul li a:hover,
+#navbarCollapse ul li:hover > a,
+#bolded-line,
+.button.gray:hover,
+.button.light:hover,
+.button.color,
+#contact_form .field #cf_commit {
+    background: #11a9ee;
+}
+
+#navbarCollapse ul ul {
+    background: #303030;
+}
+
+#navbarCollapse ul ul li a {
+    color: #aaa;
+}
+
+#navbarCollapse ul ul li a {
+    padding: 9px 18px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    border-bottom: 1px solid #404040;
+}
+
+#footer {
+    background: #303030;
+    padding: 15px 35px 0px 35px;
+    margin: 0 auto 50px auto;
+}
+
+#footer-bottom {
+    border-top: 1px solid #3c3c3c;
+    margin-top: 25px;
+    padding: 22px 0;
+}
+
+#footer .vcard .org, #footer .vcard .tel {
+    color: #fff;
+    font-weight: bold;
+}
+
+#social {
+    text-align: center;
+    padding: 0 10px;
+}
+
+#social a {
+    margin: 5px 5px 5px 5px;
+}
+
+#footer-bottom a {
+    color: #fff;
+}
+
+#scroll-top-top {
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+}
+
+.page-summary p {
+    font-size: 28px;
+    line-height: 30px;
+    font-family: incarnatusiilight, Helvetica, sans-serif;
+    font-weight: normal;
+    letter-spacing: -0.025em;
+}
+
+#page-title {
+    border-bottom: 1px solid #e9e9e9;
+    display: block;
+    margin: 0 0 25px 0;
+}

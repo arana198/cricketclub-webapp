@@ -1,0 +1,55 @@
+debug: true
+
+server:
+  port: 8002
+
+spring:
+  application:
+    name: cricketclub-webapp
+  aop:
+    proxy-target-class: true
+  redis:
+    host: pub-redis-18095.us-east-1-1.1.ec2.garantiadata.com
+    port: 18095
+    password: cricket
+
+security:
+  user:
+    password: none
+  oauth2:
+    sso:
+      home:
+        secure: false
+        path: /,/**/*.html
+    client:
+      accessTokenUri: http://localhost:8001/api/oauth/token
+      userAuthorizationUri: http://localhost:8001/api/oauth/authorize
+      logoutUri: http://localhost:8001/api/v1.0/users/logout
+      clientId: 4f7ec648a48b9d3fa239b497f7b6b4d8019697bd
+      clientSecret: edfeba07ec1dd4ff45928ee715a8e1ecc149a060
+      scope: all
+    resource:
+      userInfoUri: http://localhost:8001/api/me
+
+zuul:
+  routes:
+    user:
+      path: /api/me
+      url: http://localhost:8001
+      stripPrefix: false
+    role:
+      path: /api/v1.0/roles/**
+      url: http://localhost:8001
+      stripPrefix: false
+    committee:
+      path: /api/v1.0/committees/**
+      url: http://localhost:8001
+      stripPrefix: false
+    login:
+      path: /login
+      url: /api/login
+
+
+logging:
+  level:
+    org.springframework.security: DEBUG

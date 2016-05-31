@@ -1,0 +1,72 @@
+<nav class="navbar navbar-inverse" ng-controller="NavigationController as nav" role="tablist">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <!-- Collection of nav links, forms, and other content for toggling -->
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="active">
+                <a class="depth_1 open_in_new_tab" title="Home" ng-href="/">Home</a>
+            </li>
+            <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle" ng-href="#">About Us <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a title="Over 150 years of cricket at The Spa ground." ng-href="about">Club History</a></li>
+                    <li><a title="Elected officers" ng-href="about/club-officers-and-contacts/">Club Officers and contacts</a></li>
+                    <li><a title="2014 subscriptions and memberships" ng-href="about/subscriptions-and-memberships/">Subscriptions and memberships</a></li>
+                    <li><a title="Roll of Honour" ng-href="about/roll-of-honour/">Roll of Honour</a></li>
+                    <li><a title="Who's become a hero and legend in their own lifetime?" ng-href="about-wembleycc/club-records-and-highlights/">Club records and highlights</a></li>
+                    <li><a title="Playing archives" ng-href="about/playing-archives/">Playing archives</a></li>
+                    <li><a title="Interested in playing" ng-href="youth-section/interested-in-playing/">Interested in playing</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle" title="Cricket lovely cricket....." href="teams/">Teams <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a title="Saturday First XI" ng-href="teams/saturday/1XI">1st XI</a></li>
+                    <li><a title="Saturday Second XI" ng-href="teams/saturday/2XI">2nd XI</a></li>
+                    <li><a title="Saturday Third XI" ng-href="teams/saturday/3XI">3rd XI</a></li>
+                    <li><a title="Saturday Fourth XI" ng-href="teams/saturday/4XI">4th XI</a></li>
+                    <li><a title="Saturday Fifth XI" ng-href="teams/saturday/5XI">5th XI</a></li>
+                    <li><a title="Sunday First XI" ng-href="teams/sunday/1XI">Sunday 1st XI</a></li>
+                    <li><a title="Sunday Second XI" ng-href="teams/sunday/2XI">Sunday 2nd XI</a></li>
+                    <li><a title="Midweek XI" ng-href="teams/midweekXI">Midweek XI</a></li>
+                    <li><a title="Under 11s" ng-href="teams/youth/U11">Under 11s</a></li>
+                    <li><a title="Under 13s" ng-href="teams/youth/U13">Under 13s</a></li>
+                    <li><a title="Under 15s" ng-href="teams/youth/U15">Under 15s</a></li>
+                    <li><a title="Under 17s" ng-href="teams/youth/U17">Under 17s</a></li>
+                </ul>
+            </li>
+            <li><a title="Upcoming fixtures" href="sponsors/">Fixtures</a></li>
+            <li><a title="Results" href="sponsors/">Results</a></li>
+            <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle" title="Stats....." href="teams/">Statistic <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a title="Batting stats" ng-href="statistic/batting">Batting Statistics</a></li>
+                    <li><a title="Bowling stats" ng-href="statistic/bowling">Bowling Statistics</a></li>
+                    <li><a title="Fielding stats" ng-href="statistic/fielding">Fielding Statistics</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" title="The Clubhouse" ng-href="the-clubhouse/">The Clubhouse <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a title="Xxxxxxxxxx" ng-href="the-clubhouse/facilities/">Facilities</a></li>
+                    <li><a title="Bookings and events at The Spa" ng-href="the-clubhouse/forthcoming-club-events/">Forthcoming Club Events</a></li>
+                </ul>
+            </li>
+            <li><a title="We are grateful to all our sponsors and look forward to seeing you in the coming season." href="sponsors/">Sponsors</a></li>
+            <li><a title="Make contact with Wembley CC" ng-href="contact-us/">Contact Us</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li ng-show="!nav.authenticated()"><a href="" ng-click="nav.login()"><span class="glyphicon glyphicon-log-in"> Login</a></li>
+            <li ng-show="nav.authenticated()"><a href="" ng-click="nav.logout()"><span class="glyphicon glyphicon-log-out"> Logout</a></li>
+        </ul>
+    </div>
+</nav>
+       
